@@ -1,0 +1,138 @@
+html, body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.64;
+    color: #202020;
+    border-top:3px solid #d8b24f;;
+}
+
+h1, h2, h3, h4 {
+    margin-top:0;
+    margin-bottom: 15px;      
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 36px;
+    color:black;
+    margin-top:0px;
+}
+
+h3{
+    color:#d8b24f;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 16px;
+    color: #434344;
+}
+
+a{
+    font-size:22px;
+    margin-right:30px;
+    color:white;
+}
+
+header{
+    background-image: url(../img/background-image.png);
+    background-size: cover;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5% 0px;
+    color:white;
+  }
+
+.content{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+}
+
+header img{
+    width:200px;
+    border: solid 6px #d8b24f;
+    border-radius: 50%;
+    margin-right:5%;
+ }
+
+section{
+    flex-direction: column;
+}
+
+section p{
+    color:#878e94;
+}
+
+.box{
+    box-shadow: 0 4px 44px 0 rgba(0, 0, 0, 0.07);
+    flex-direction: column;
+    padding:80px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.job-section{
+    flex-direction: column;
+}
+
+.job{
+    padding: 40px;
+    display: flex;
+    box-sizing:border-box;  
+}
+
+.job img{
+    align-self: flex-start;
+    margin-right: 55px;
+}
+
+footer{
+    background-color: #d8b24f;
+}
+
+footer h2{
+    color:white;
+}
+
+.logo-container{
+    align-self: flex-end;   
+}
+
+i{
+    vertical-align:-webkit-baseline-middle;
+    margin-bottom: 16px;
+}
+
+    @media(max-width: 600px){
+        
+        .content{
+            width:95%;
+            padding:20px;
+            flex-wrap: wrap;
+        
+        }
+        header{
+            text-align: center;
+        }
+        header img{
+            margin: 0 auto;
+        }
+        .job{
+            flex-wrap: wrap; 
+        }
+        
+    }
